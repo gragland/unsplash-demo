@@ -4,7 +4,7 @@ const nodeExternals = require('webpack-node-externals');
 
 const ENV = process.env.NODE_ENV;
 const BUILD_SERVER = process.env.BUILD_SERVER;
-const ALIAS = (process.env.ALIAS === 'false' ? false : true); // Default to true
+const ALIAS = (process.env.ALIAS ? true : false);
 
 const config = {};
 
